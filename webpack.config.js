@@ -78,7 +78,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.png', '.html', '.css', '.scss', '.svg' ],
+        extensions: ['.js', '.png', '.html', '.css', '.scss', '.svg', '.webp' ],
         alias: {
             '@img': path.resolve(__dirname, 'src/images'),
             '@scr': path.resolve(__dirname, 'src/script'),
@@ -115,7 +115,7 @@ module.exports = {
                 use: cssLoaders('sass-loader')
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|webp)$/i,
                 loader: 'file-loader',
                 options: {
                     publicPath: '../',

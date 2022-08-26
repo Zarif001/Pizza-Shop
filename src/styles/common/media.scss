@@ -74,6 +74,11 @@
                 white-space: nowrap;
             }
         }
+        &__pizza{
+            &-cart, &-price, &-cross    {
+                align-self: flex-start;
+            }
+        }
     }
 
     // Basket Pug

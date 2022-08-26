@@ -71,10 +71,10 @@ try {
         const data = arr.data
         basket(data)
         for (const key in data) {
+            const basketLeft = document.querySelector('.main__basket-leftCart')
             const crossPay = document.querySelector('.main__check-pay')
             const crossPizza = document.querySelectorAll('.main__pizza-cross')
             const pizzaAbout = document.querySelectorAll('.main__pizza-aboutCheese')
-            const backPizza = document.querySelector('.main__check-back') 
             crossPizza.forEach((item, i) => {
                 crossPizza[i].addEventListener('click', (e) => {
                     e.preventDefault()
@@ -82,15 +82,15 @@ try {
                     pizzaAbout[i].style.display = 'none'
                     setTimeout(() => {
                         window.location.reload()
-                    }, 400);
+                    }, 1000);
                 })
             })
-            backPizza.addEventListener('click', (e) =>{
+            basketLeft.addEventListener('click', (e) =>{
                 e.preventDefault()
                 axios.delete(`https://62d14da4dccad0cf1764cae4.mockapi.io/Pizza/${data[key].id}`)
                 setTimeout(() => {
                     location.href = 'index.html'
-                }, 300);
+                }, 1000);
 
             })
             crossPay.addEventListener('click', (e) => {
