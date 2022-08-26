@@ -35,6 +35,15 @@
             &-link {
                 margin-bottom: 20px;
             }
+
+            &-categories {
+                display: none;
+
+                &.active {
+                    display: block;
+
+                }
+            }
         }
     }
 }
