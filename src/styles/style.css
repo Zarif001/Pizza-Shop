@@ -1,3 +1,5 @@
 @import 'font.css';
-@import 'common/header.scss';
 @import 'common/root.scss';
+@import 'common/header.scss';
+@import 'common/main.scss';
+@import 'common/media.scss';

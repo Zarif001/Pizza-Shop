@@ -8,10 +8,14 @@ import axios from 'axios'
     mainBurger.addEventListener('click', () => {
         mainList.classList.add('active')
         mainBurger.classList.add('active')
+        mainClose.classList.add('active')
+
     })
     mainClose.addEventListener('click', () => {
         mainList.classList.remove('active')
         mainBurger.classList.remove('active')
+        mainClose.classList.remove('active')
+
     })
 
     const renderItems = (arrItems) => {
@@ -155,6 +159,7 @@ import axios from 'axios'
     }
 
     getData()
+
 
 
 

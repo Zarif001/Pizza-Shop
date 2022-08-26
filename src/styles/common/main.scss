@@ -77,6 +77,15 @@
         &-burger img {
             width: 100px;
         }
+
+        &-categories {
+            display: none;
+
+            &.active {
+                display: block;
+
+            }
+        }
     }
 
     &__content-sortPopup {
