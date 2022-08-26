@@ -59,29 +59,24 @@
         }
     }
 
-    // Cart Pug
+    // Basket Pug
     .main {
         &__truck {
             &-img {
-                width: 100%;
+                width: 85%;
             }
 
             &-describe {
-                font-size: 16px;
+                font-size: 15px;
             }
 
             &-title {
                 white-space: nowrap;
-            }
-        }
-        &__pizza{
-            &-cart, &-price, &-cross    {
-                align-self: flex-start;
+                font-size: 29px;
             }
         }
     }
 
-    // Basket Pug
 
     .main {
 

@@ -1,5 +1,4 @@
 import axios from "axios";
-import { createElement } from "react";
 try {
     const basket = async (array) => {
 
@@ -71,7 +70,6 @@ try {
         const data = arr.data
         basket(data)
         for (const key in data) {
-            const basketLeft = document.querySelector('.main__basket-leftCart')
             const crossPay = document.querySelector('.main__check-pay')
             const crossPizza = document.querySelectorAll('.main__pizza-cross')
             const pizzaAbout = document.querySelectorAll('.main__pizza-aboutCheese')
@@ -85,14 +83,7 @@ try {
                     }, 1000);
                 })
             })
-            basketLeft.addEventListener('click', (e) =>{
-                e.preventDefault()
-                axios.delete(`https://62d14da4dccad0cf1764cae4.mockapi.io/Pizza/${data[key].id}`)
-                setTimeout(() => {
-                    location.href = 'index.html'
-                }, 1000);
 
-            })
             crossPay.addEventListener('click', (e) => {
                 e.preventDefault()
                 axios.delete(`https://62d14da4dccad0cf1764cae4.mockapi.io/Pizza/${data[key].id}`)
