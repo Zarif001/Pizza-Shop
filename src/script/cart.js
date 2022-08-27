@@ -92,11 +92,11 @@ try {
                 
                 message.style.display = 'flex'
 
-                // setTimeout(() => {
-                //     message.style.display = 'none'
-                //     location.href = 'index.html'
+                setTimeout(() => {
+                    message.style.display = 'none'
+                    location.href = 'index.html'
 
-                // }, 4000);
+                }, 4000);
             
             })
    
